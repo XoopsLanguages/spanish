@@ -14,7 +14,7 @@ define('_OXYGEN_VERSION_XOOPS', 'Versión de XOOPS');
 define('_OXYGEN_VERSION_PHP', 'Versión de PHP');
 define('_OXYGEN_VERSION_SMARTY', 'Versión de Smarty');
 define('_OXYGEN_VERSION_MYSQL', 'Versión de MySQL');
-define('_OXYGEN_Server_API', 'API del servidor');
+define('_OXYGEN_SERVER_API', 'API del servidor');
 define('_OXYGEN_OS', 'SO');
 define('_OXYGEN_ABOUT', 'Acerca de XOOPS');
 define('_OXYGEN_ABOUT_TEXT', 'Lee la página <a href="https://xoops.org/modules/wfchannel/" rel="external">Todo sobre XOOPS</a> para más detalles.');
