@@ -1,0 +1,33 @@
+<div id="help-template" class="outer">
+    <h1 class="head">Ayuda: Plantillas</h1>
+
+    <h4 class="odd">Descripción</h4>
+
+    <p class="even">
+        XOOPS permite cierta separación entre la presentación real del sitio (la "<em>skin</em>" o interfaz de usuario) y el código que se ejecuta en segundo plano. La primera se gestiona mediante un sofisticado mecanismo basado en temas gráficos. Un tema puede incluir, en su forma básica, las plantillas HTML esenciales que definen la interfaz visual del sitio, así como las hojas de estilo e imágenes necesarias para complementar esa interfaz visual. Los temas se pueden cambiar en la interfaz administrativa, por lo que cambiar toda la apariencia de un sitio XOOPS es tan simple como cambiar el valor de un selector y hacer clic en "Aceptar". XOOPS también proporciona a los administradores del sitio la capacidad de permitir a los usuarios elegir entre algunos temas disponibles.<br><br>
+
+        En términos generales, un <strong><em>tema</em></strong> es el marco visual de alto nivel de un sitio: el tema define, por ejemplo, el diseño general del sitio; por otro lado, generalmente no define la distribución específica del contenido dentro de un bloque. Esto se gestiona mediante una entidad diferente llamada <em><strong>conjunto de plantillas</strong></em>. Un conjunto de plantillas es un conjunto de plantillas HTML que definen la presentación del contenido dentro de todos los bloques que forman un sitio web XOOPS. Si queremos una metáfora más clara para esto, podríamos decir que el tema es como el arquitecto de una casa, mientras que el conjunto de plantillas es como el decorador de interiores. El primero coloca las paredes y define la distribución general, pero es el segundo quien se encarga de "<em>vestir</em>" esas paredes.<br><br>
+
+        Si el tema activo es uno simple que solo incluye un archivo de tema, archivos CSS y algunas imágenes, XOOPS emplea el conjunto de plantillas predeterminado para definir la presentación de los bloques. Sin embargo, algunos temas complejos son lo suficientemente sofisticados como para incluir su propio conjunto de plantillas. En este caso, el administrador del sitio debe utilizar la interfaz administrativa para configurar tanto el tema como el conjunto de plantillas.<br><br>
+
+        ¿Cómo se logra la <em>magia</em> del tema? Es decir, ¿cómo pueden las plantillas HTML incluir contenido dinámico? Esto no se hace con espejos y humo, sino con un motor de plantillas inteligente llamado
+        <strong><a rel="external" href="https://www.smarty.net/">Smarty</a></strong> que realiza la función de lo que solía llamarse
+        <em><strong>interpolación de variables</strong></em>. Expresado de manera simple, podríamos decir que el sistema XOOPS utiliza archivos PHP para mantener la lógica de los módulos (acceso a la base de datos, asignación de variables, gestión de derechos...), archivos HTML con variables Smarty insertadas para gestionar la interfaz visual real, y el motor Smarty para insertar valores y cadenas en lugares específicos dentro del HTML que construye las páginas vistas por el usuario final. En resumen, lo que esto significa para usted se puede resumir fácilmente: gracias a su sistema de temas, XOOPS permite a los diseñadores de sitios construir sitios más interesantes y visualmente impresionantes sin mucha preocupación por lo que sucede bajo el capó.
+    </p>
+    <h4 class="odd">Clonación y descarga de conjuntos de plantillas</h4>
+
+    <p class="even">
+        Si desea crear un conjunto de plantillas personalizado, puede hacer una copia del conjunto predeterminado (o cualquier otro) seleccionando el enlace '<em>clonar</em>' (se le pedirá que le dé un nombre al nuevo conjunto). A diferencia del predeterminado, otros conjuntos de plantillas se pueden editar libremente. También puede guardar una copia de un conjunto de plantillas en el disco seleccionando el enlace '<em>descargar</em>', o eliminarlo con el enlace '<em>eliminar</em>'. También puede ver a veces un enlace adicional '<em>Generar</em>' junto a los nuevos módulos para los que aún no se han creado plantillas.
+    </p>
+
+    <h4 class="odd">Edición de plantillas</h4>
+
+    <p class="even">
+        Puede ver una lista completa de las plantillas disponibles navegando por la vista de árbol del directorio. Cuando selecciona una plantilla, XOOPS la abrirá en un editor donde puede editarla.<br><br>
+
+        Al editar plantillas, debe habilitar una preferencia que actualice automáticamente los archivos .tpl de la plantilla del módulo si hay archivos más nuevos en el directorio themes/su tema/templates para el tema actual (Módulo del Sistema -> Preferencias -> Configuración General -> ¿Actualizar los archivos .tpl de la plantilla del módulo del directorio themes/su tema/templates? -> '<em>Sí</em>'). Esto debe desactivarse una vez que el sitio se haga público.<br><br>
+        Si accidentalmente estropea una plantilla, no olvide que puede recuperar una copia '<em>buena</em>' del conjunto de plantillas predeterminado. Si está trabajando con plantillas no estándar, puede ser una buena idea guardar una copia en el disco antes de comenzar a modificarlas.
+
+    </p>
+
+</div>
